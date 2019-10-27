@@ -1,0 +1,16 @@
+extends template/main
+
+block variables
+  - let title = 'Главная страница'
+  - let pageClass = 'index-page'
+
+block content
+  .container
+    .start-form
+      .start-form__header
+        .start-form__photo
+        .start-form__navigation
+          a(href="").start-form__navigation_link.active Sign in
+          a(href="").start-form__navigation_link Sign up
+      .start-form__body
+      .start-form__footer

@@ -1,0 +1,9 @@
+.DS_store
+.idea
+build
+node_modules
+.git
+/*.exe.stackdump
+yarn.lock
+/dev/static/images/
+/dev/static/fonts/

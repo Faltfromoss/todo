@@ -1,0 +1,32 @@
+.start-form
+  display: flex
+  flex-direction: column
+  &__header, &__footer
+    flex: 0 0 auto
+  &__body
+    flex: 1
+  &__header
+    background-color: rgba(white, .1)
+    padding-top: 40px
+    display: flex
+    flex-direction: column
+  &__photo
+    +size(100px)
+    background-color: white
+    border-radius: 50%
+    margin: 0 auto 50px
+  &__navigation
+    display: flex
+    margin-top: auto
+    &_link
+      flex: 1
+      text-align: center
+      padding: 15px 0
+      text-decoration: none
+      font-family: 'Avenir Book', sans-serif
+      text-transform: uppercase
+      color: white
+      font-size: 14px
+      border-bottom: 3px solid transparent
+      &.active
+        border-color: $malibu
