@@ -10,7 +10,23 @@ block content
       .start-form__header
         .start-form__photo
         .start-form__navigation
-          a(href="").start-form__navigation_link.active Sign in
-          a(href="").start-form__navigation_link Sign up
+          a(href="#").start-form__navigation_link.active Sign in
+          a(href="#").start-form__navigation_link Sign up
       .start-form__body
-      .start-form__footer
+        form.form
+          .form__body
+            .form-group
+              .form-group__icon
+                +icon('user')
+              .form-group__input
+                input(placeholder="Username").g-input
+            .form-group
+              .form-group__icon
+                +icon('lock')
+              .form-group__input
+                input(type="password" placeholder="Password").g-input
+          .form__footer
+            .btn
+              span Continue
+            .btn.btn--transparent
+              span Forgot password?
